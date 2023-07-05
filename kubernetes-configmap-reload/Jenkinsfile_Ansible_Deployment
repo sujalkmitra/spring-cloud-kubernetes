@@ -1,4 +1,4 @@
-@Library('jenkins-shared-library@main') _
+@Library('jenkins-shared-library@master') _
 pipeline {
 
   agent any
@@ -21,8 +21,8 @@ pipeline {
 			}
             steps {
                 gitCheckout(
-                    branch: "main",
-                    url: "https://github.com/praveen1994dec/spring-cloud-kubernetes.git"
+                    branch: "master",
+                    url: "https://github.com/sujalmitra/spring-cloud-kubernetes.git"
                 )
             }
         }
